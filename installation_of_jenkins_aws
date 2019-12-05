@@ -1,0 +1,12 @@
+    1  sudo yum install java
+    2   sudo yum update 
+    3  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+    4  sudo rpm — import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+    5  sudo rpm -import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+    6  sudo yum install jenkins
+    7  sudo service jenkns start
+    8  sudo chkconfig jenkins on
+   11  sudo systemctl start jenkins.service
+   12  sudo systemctl enable jenkins.service
+   13  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   14  sudo yum install git(if you want to upload and run file from git)
